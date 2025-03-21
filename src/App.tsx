@@ -1,16 +1,16 @@
 
-// For TypeScript with newer React versions, explicit React import isn't required
-// unless using React namespace directly
-import './App.css'
-import LandingPage from './LandingPage'
+// No explicit React import needed with modern JSX transform
+import LandingPage from './LandingPage';
+import './App.css';
 
 function App() {
-  // This component was last updated at: 2025-03-21T19:55:39.573Z
+  // Updated at: 2025-03-21T19:55:39.573Z
+  // Update ID: uapc8ask
   return (
     <div className="App">
       <LandingPage />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
