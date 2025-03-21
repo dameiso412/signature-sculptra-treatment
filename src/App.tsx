@@ -1,13 +1,14 @@
 
-import React from 'react'
+// For TypeScript with newer React versions, explicit React import isn't required
+// unless using React namespace directly
 import './App.css'
+import LandingPage from './LandingPage'
 
 function App() {
-  // This component was last updated at: 2025-03-21T19:24:57.717Z
+  // This component was last updated at: 2025-03-21T19:55:39.573Z
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold mb-4">Landing Page</h1>
-      <p className="text-gray-600">Last updated: 2025-03-21T19:24:57.717Z</p>
+      <LandingPage />
     </div>
   )
 }
