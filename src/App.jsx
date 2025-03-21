@@ -1,12 +1,13 @@
 
 import React from 'react'
+import LandingPage from './LandingPage'
 
 function App() {
-  // This component was last updated at: 2025-03-21T19:05:32.663Z
+  // Updated at: 2025-03-21T19:05:32.663Z
+  // Update ID: 5r3cirzy
   return (
     <div className="App">
-      <h1>Landing Page</h1>
-      <p>Last updated: 2025-03-21T19:05:32.663Z</p>
+      <LandingPage />
     </div>
   )
 }
