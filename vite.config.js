@@ -1,14 +1,25 @@
-
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
+  server: {
+    hmr: {
+      overlay: false
+    }
   },
-})
+  esbuild: {
+    logLevel: 'info',
+  },
+  build: {
+    rollupOptions: {
+      onwarn(warning, defaultHandler) {
+        if (warning.code === 'MODULE_LEVEL_DIRECTIVE') {
+          return;
+        }
+        defaultHandler(warning);
+      }
+    }
+  }
+});
