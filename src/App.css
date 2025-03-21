@@ -1,9 +1,7 @@
 
 .App {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  min-height: 100vh;
 }
 
-/* Last updated: 2025-03-21T19:24:57.717Z */
+/* Last updated: 2025-03-21T19:55:39.573Z */
